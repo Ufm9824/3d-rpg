@@ -1,15 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>First Person RPG</title>
   <style>
-    body { margin: 0; overflow: hidden; }
+    body { margin: 0; overflow: hidden; background-color: #000; color: white; }
     canvas { display: block; }
+    #info {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      user-select: none;
+    }
   </style>
 </head>
 <body>
+  <div id="info">Click anywhere to lock pointer and control with WASD</div>
+
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/PointerLockControls.js"></script>
   <script src="script.js"></script>
